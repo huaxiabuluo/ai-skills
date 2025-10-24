@@ -1,0 +1,38 @@
+{
+  "name": "frontend-scaffold-marketplace",
+  "version": "1.0.0",
+  "description": "Marketplace collection of frontend project scaffolds and templates",
+  "main": "index.js",
+  "scripts": {
+    "list": "node marketplace-manager.js list",
+    "test": "node marketplace-manager.js test frontend-scaffold",
+    "test-all": "node marketplace-manager.js test frontend-scaffold",
+    "use": "node marketplace-manager.js use",
+    "install-skills": "for skill in $(find skills -maxdepth 1 -type d); do echo \"Installing dependencies for $skill...\"; [ -f \"$skill/package.json\" ] && cd \"$skill\" && npm install && cd .. || echo \"No package.json found\"; done"
+  },
+  "keywords": [
+    "frontend",
+    "scaffold",
+    "template",
+    "generator",
+    "marketplace",
+    "skills",
+    "claude-code"
+  ],
+  "author": "Claude Code",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthropics/frontend-scaffold-marketplace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anthropics/frontend-scaffold-marketplace/issues"
+  },
+  "homepage": "https://github.com/anthropics/frontend-scaffold-marketplace#readme",
+  "workspaces": [
+    "skills/*"
+  ]
+}

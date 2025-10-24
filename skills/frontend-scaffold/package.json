@@ -1,0 +1,42 @@
+{
+  "name": "frontend-scaffold",
+  "version": "1.0.0",
+  "description": "Frontend project scaffold generator with TypeScript, React, Vite, and Next.js templates",
+  "main": "scripts/generate-project.js",
+  "bin": {
+    "frontend-scaffold": "./scripts/generate-project.js"
+  },
+  "scripts": {
+    "test": "node scripts/test-generation.js",
+    "install-global": "npm link"
+  },
+  "keywords": [
+    "frontend",
+    "scaffold",
+    "generator",
+    "typescript",
+    "react",
+    "vite",
+    "nextjs",
+    "template"
+  ],
+  "author": "Claude Code",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "scripts/",
+    "assets/",
+    "SKILL.md",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthropics/frontend-scaffold.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anthropics/frontend-scaffold/issues"
+  },
+  "homepage": "https://github.com/anthropics/frontend-scaffold#readme"
+}
