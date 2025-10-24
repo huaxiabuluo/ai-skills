@@ -1,113 +1,22 @@
 {
   "name": "hauxiabuluo-marketplace",
-  "version": "1.0.0",
-  "description": "A marketplace collection for frontend project scaffolds and templates",
-  "author": "hauxiabuluo",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/huaxiabuluo/ai-skills.git"
+  "owner": {
+    "name": "hauxiabuluo",
+    "email": "huaxiabuluo@hotmail.com"
   },
-  "skills": [
+  "metadata": {
+    "description": "A marketplace collection for frontend project scaffolds and templates",
+    "version": "1.0.0"
+  },
+  "plugins": [
     {
       "name": "frontend-scaffold",
-      "displayName": "Frontend Scaffold Generator",
-      "description": "Generate modern frontend projects with TypeScript, React, Vite, and Next.js templates",
-      "version": "1.0.0",
-      "category": "development-tools",
-      "tags": [
-        "frontend",
-        "scaffold",
-        "typescript",
-        "react",
-        "vite",
-        "nextjs",
-        "generator",
-        "template",
-        "cli"
-      ],
-      "entryPoint": "skills/frontend-scaffold/scripts/cli.js",
-      "documentation": "skills/frontend-scaffold/SKILL.md",
-      "examples": [
-        "Generate npm package: npm run use frontend-scaffold npm-package --name my-lib --description 'My awesome library' --author 'John Doe'",
-        "Generate React app: npm run use frontend-scaffold react-vite --name my-react-app",
-        "Generate Next.js app: npm run use frontend-scaffold nextjs-app-router --name my-nextjs-app"
-      ],
-      "templates": [
-        {
-          "name": "npm-package",
-          "displayName": "TypeScript Library",
-          "description": "Complete TypeScript library template with Rollup, Jest, and ESLint",
-          "technology": ["TypeScript", "Rollup", "Jest", "ESLint"],
-          "output": ["CommonJS", "ESM", "TypeScript definitions"]
-        },
-        {
-          "name": "react-vite",
-          "displayName": "React + Vite Application",
-          "description": "Modern React application with Vite, TypeScript, Tailwind CSS, and React Router",
-          "technology": ["React 18", "Vite", "TypeScript", "Tailwind CSS", "React Router", "Vitest", "ESLint", "Husky"],
-          "features": ["Fast development server", "Hot module replacement", "Pre-commit hooks", "Path aliases"]
-        },
-        {
-          "name": "nextjs-app-router",
-          "displayName": "Next.js App Router",
-          "description": "Full-stack Next.js application with App Router and Tailwind CSS",
-          "technology": ["Next.js 14", "App Router", "TypeScript", "Tailwind CSS", "Jest", "React Testing Library"],
-          "features": ["Server components", "Client components", "SSR/SSG", "SEO optimization", "API routes"]
-        }
-      ],
-      "usage": {
-        "interactive": "node skills/frontend-scaffold/scripts/generate-project.js <type>",
-        "cli": "node skills/frontend-scaffold/scripts/cli.js <type> [options]",
-        "marketplace": "node marketplace-manager.js use frontend-scaffold [args...]"
-      },
-      "testing": {
-        "command": "node skills/frontend-scaffold/scripts/test-generation.js",
-        "coverage": true,
-        "framework": "Jest"
-      },
-      "dependencies": {
-        "runtime": "Node.js >= 14.0.0",
-        "build": "npm",
-        "test": "Jest"
-      }
+      "description": "Generate modern frontend projects with TypeScript, React, Vite, and Next.js",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/frontend-scaffold"
+      ]
     }
-  ],
-  "categories": {
-    "development-tools": {
-      "name": "Development Tools",
-      "description": "Tools for project setup, scaffolding, code generation, and development automation",
-      "icon": "🛠️"
-    }
-  },
-  "manager": {
-    "name": "marketplace-manager.js",
-    "version": "1.0.0",
-    "commands": {
-      "list": "List all available skills",
-      "use": "Use a specific skill with arguments",
-      "test": "Test a specific skill",
-      "help": "Show help and usage information"
-    },
-    "scripts": {
-      "list": "npm run list",
-      "test": "npm run test",
-      "use": "npm run use <skill> [args...]"
-    }
-  },
-  "quickStart": {
-    "installation": "Clone or download this marketplace repository",
-    "setup": "Run 'npm run install-skills' to install all skill dependencies",
-    "usage": "Use 'npm run list' to see available skills, then 'npm run use <skill>' to generate projects"
-  },
-  "contributing": {
-    "guidelines": "Add new skills in the skills/ directory following the established structure",
-    "testing": "Each skill should include a test-generation.js script",
-    "documentation": "Update SKILL.md and marketplace.json when adding new skills"
-  },
-  "compatibility": {
-    "claudeCode": ">= 1.0.0",
-    "node": ">= 14.0.0",
-    "npm": ">= 6.0.0"
-  }
+  ]
 }
