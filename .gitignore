@@ -65,3 +65,10 @@ test-results/
 # Cache
 .cache/
 .parcel-cache/
+
+# Claude Code settings
+.claude/settings.local.json
+.claude/settings/
+
+# Allow Claude plugin marketplace config
+!.claude-plugin/marketplace.json
