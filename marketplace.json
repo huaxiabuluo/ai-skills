@@ -1,25 +1,22 @@
 {
-  "name": "Frontend Scaffold Marketplace",
-  "version": "1.0.0",
-  "description": "A marketplace collection for frontend project scaffolds and templates",
-  "author": "Claude Code",
-  "license": "MIT",
-  "skills": [
+  "name": "hauxiabuluo-marketplace",
+  "owner": {
+    "name": "hauxiabuluo",
+    "email": "huaxiabuluo@hotmail.com"
+  },
+  "metadata": {
+    "description": "A marketplace collection for frontend project scaffolds and templates",
+    "version": "1.0.0"
+  },
+  "plugins": [
     {
       "name": "frontend-scaffold",
-      "path": "skills/frontend-scaffold",
       "description": "Generate modern frontend projects with TypeScript, React, Vite, and Next.js",
-      "version": "1.0.0",
-      "category": "development-tools",
-      "tags": ["frontend", "scaffold", "typescript", "react", "vite", "nextjs", "generator"],
-      "entry_point": "scripts/cli.js",
-      "documentation": "SKILL.md"
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/frontend-scaffold"
+      ]
     }
-  ],
-  "categories": {
-    "development-tools": {
-      "name": "Development Tools",
-      "description": "Tools for project setup, scaffolding, and development automation"
-    }
-  }
+  ]
 }
