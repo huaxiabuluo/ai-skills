@@ -1,12 +1,12 @@
 {
-  "name": "Frontend Scaffold Marketplace",
+  "name": "hauxiabuluo-marketplace",
   "version": "1.0.0",
   "description": "A marketplace collection for frontend project scaffolds and templates",
-  "author": "Claude Code",
+  "author": "hauxiabuluo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anthropics/frontend-scaffold-marketplace.git"
+    "url": "git+https://github.com/huaxiabuluo/ai-skills.git"
   },
   "skills": [
     {
@@ -109,15 +109,5 @@
     "claudeCode": ">= 1.0.0",
     "node": ">= 14.0.0",
     "npm": ">= 6.0.0"
-  },
-  "changelog": {
-    "1.0.0": [
-        "Initial release of Frontend Scaffold Marketplace",
-        "Added frontend-scaffold skill with Node.js implementation",
-        "Three project templates: npm-package, react-vite, nextjs-app-router",
-        "Interactive and CLI project generation",
-        "Comprehensive testing and documentation",
-        "Marketplace management system"
-      ]
   }
 }
