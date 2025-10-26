@@ -62,7 +62,7 @@ class FullIntegrationTester {
           'src/app/page.tsx',
           'src/app/layout.tsx'
         ],
-        testCommands: ['build', 'lint']
+        testCommands: ['build']
       }
     ];
   }

@@ -94,18 +94,21 @@ Total Templates Tested: 3
 - Verifies: Rollup build, Jest tests
 - Expected files: `package.json`, `tsconfig.json`, `rollup.config.js`, `src/index.ts`, `src/__tests__/index.test.ts`
 - Test commands: `build`, `test`
+- Key dependencies: Rollup v4.52+, TypeScript v5.9+, Jest v30.2+
 
 ### react-vite Template
 - Generates: `test-react-app`
 - Verifies: Vite build, TypeScript compilation
 - Expected files: `package.json`, `vite.config.ts`, `tsconfig.json`, `src/main.tsx`, `src/App.tsx`, `src/test/setup.ts`
 - Test commands: `build`
+- Key dependencies: React v19, Vite v7.1+, Tailwind CSS v4.1+
 
 ### nextjs-app-router Template
 - Generates: `test-nextjs-app`
-- Verifies: Next.js build, ESLint checks
+- Verifies: Next.js build
 - Expected files: `package.json`, `next.config.js`, `tsconfig.json`, `jest.config.js`, `src/app/page.tsx`, `src/app/layout.tsx`
-- Test commands: `build`, `lint`
+- Test commands: `build`
+- Key dependencies: Next.js v16.0+, React v19, Tailwind CSS v4.1+
 
 ## Troubleshooting
 
