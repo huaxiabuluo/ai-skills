@@ -8,6 +8,10 @@
   },
   "scripts": {
     "test": "node scripts/test-generation.js",
+    "test:quick": "node scripts/quick-test.js",
+    "test:full": "node scripts/full-test.js",
+    "test:all": "npm run test && npm run test:quick && npm run test:full",
+    "clean": "node scripts/clean-tests.js",
     "install-global": "npm link"
   },
   "keywords": [
@@ -38,5 +42,8 @@
   "bugs": {
     "url": "https://github.com/anthropics/frontend-scaffold/issues"
   },
-  "homepage": "https://github.com/anthropics/frontend-scaffold#readme"
+  "homepage": "https://github.com/anthropics/frontend-scaffold#readme",
+  "devDependencies": {
+    "tslib": "^2.8.1"
+  }
 }
