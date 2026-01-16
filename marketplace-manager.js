@@ -20,7 +20,7 @@ function loadMarketplaceConfig() {
 function listSkills() {
   const config = loadMarketplaceConfig();
 
-  console.log('\n🛍️  Frontend Scaffold Marketplace\n');
+  console.log(`\n🛍️  ${config.name}\n`);
   console.log('Available Skills:\n');
 
   config.skills.forEach((skill, index) => {

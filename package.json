@@ -1,7 +1,7 @@
 {
-  "name": "frontend-scaffold-marketplace",
-  "version": "1.0.0",
-  "description": "Marketplace collection of frontend project scaffolds and templates",
+  "name": "ai-skills-marketplace",
+  "version": "1.1.0",
+  "description": "Marketplace collection of AI skills including frontend scaffolds, documentation, and development tools",
   "main": "index.js",
   "scripts": {
     "list": "node marketplace-manager.js list",
@@ -17,7 +17,11 @@
     "generator",
     "marketplace",
     "skills",
-    "claude-code"
+    "claude-code",
+    "nextjs",
+    "documentation",
+    "react",
+    "fullstack"
   ],
   "author": "Claude Code",
   "license": "MIT",

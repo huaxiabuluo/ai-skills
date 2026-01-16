@@ -5,8 +5,8 @@
     "email": "huaxiabuluo@hotmail.com"
   },
   "metadata": {
-    "description": "A marketplace collection for frontend project scaffolds and templates",
-    "version": "1.0.0"
+    "description": "A marketplace collection for frontend development skills including scaffolds, documentation, and references",
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -16,6 +16,15 @@
       "strict": false,
       "skills": [
         "./skills/frontend-scaffold"
+      ]
+    },
+    {
+      "name": "nextjs",
+      "description": "Next.js full-stack React framework skill with App Router and Pages Router documentation and references",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/nextjs"
       ]
     }
   ]

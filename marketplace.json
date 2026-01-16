@@ -1,0 +1,21 @@
+{
+  "name": "ai-skills-marketplace",
+  "version": "1.1.0",
+  "description": "Marketplace collection of AI skills including frontend scaffolds, documentation, and development tools",
+  "skills": [
+    {
+      "name": "frontend-scaffold",
+      "description": "Generate modern frontend projects with TypeScript, React, Vite, and Next.js",
+      "path": "skills/frontend-scaffold",
+      "tags": ["frontend", "scaffold", "generator", "typescript", "react", "vite", "nextjs"],
+      "entry_point": "scripts/cli.js"
+    },
+    {
+      "name": "nextjs",
+      "description": "Next.js full-stack React framework documentation and references",
+      "path": "skills/nextjs",
+      "tags": ["nextjs", "react", "fullstack", "documentation", "reference"],
+      "entry_point": "SKILL.md"
+    }
+  ]
+}

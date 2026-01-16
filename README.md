@@ -1,6 +1,6 @@
-# Frontend Scaffold Marketplace
+# Frontend Development Skills Marketplace
 
-A collection of frontend project scaffolds and templates for rapid development.
+A collection of frontend development skills including project scaffolds, templates, documentation, and references for rapid development.
 
 ## 🚀 Skills Available
 
@@ -30,21 +30,55 @@ node scripts/cli.js react-vite --name my-react-app
 node scripts/cli.js nextjs-app-router --name my-nextjs-app
 ```
 
+### Next.js Reference
+**Location**: `skills/nextjs/`
+
+**Description**: Comprehensive Next.js documentation and references for App Router and Pages Router patterns.
+
+**Features**:
+- 📚 Complete App Router documentation with examples
+- 📚 Complete Pages Router documentation with examples
+- 🔍 Common patterns and best practices
+- 📖 API references and usage examples
+- 🎯 Side-by-side comparisons between routing approaches
+
+**Usage**:
+```bash
+# Navigate to skill directory
+cd skills/nextjs
+
+# Read the main documentation
+cat SKILL.md
+
+# Explore references
+ls references/
+ls references/app-router/
+ls references/pages-router/
+```
+
+This is a documentation-type skill that provides comprehensive reference material for Next.js development without code generation capabilities.
+
 ## 📁 Project Structure
 
 ```
 ├── skills/
-│   └── frontend-scaffold/          # Frontend scaffold generator skill
-│       ├── SKILL.md              # Skill documentation
-│       ├── package.json           # Node.js package configuration
-│       ├── scripts/              # Generation scripts
-│       │   ├── generate-project.js    # Interactive generator
-│       │   ├── cli.js               # CLI version
-│       │   └── test-generation.js    # Test utilities
-│       └── assets/               # Project templates
-│           ├── npm-package/       # TypeScript library template
-│           ├── react-vite/        # React + Vite template
-│           └── nextjs-app-router/ # Next.js App Router template
+│   ├── frontend-scaffold/          # Frontend scaffold generator skill
+│   │   ├── SKILL.md              # Skill documentation
+│   │   ├── package.json           # Node.js package configuration
+│   │   ├── scripts/              # Generation scripts
+│   │   │   ├── generate-project.js    # Interactive generator
+│   │   │   ├── cli.js               # CLI version
+│   │   │   └── test-generation.js    # Test utilities
+│   │   └── assets/               # Project templates
+│   │       ├── npm-package/       # TypeScript library template
+│   │       ├── react-vite/        # React + Vite template
+│   │       └── nextjs-app-router/ # Next.js App Router template
+│   └── nextjs/                   # Next.js reference skill
+│       ├── SKILL.md              # Main documentation
+│       ├── README.md             # Quick reference guide
+│       └── references/           # Documentation by router type
+│           ├── app-router/       # App Router docs
+│           └── pages-router/     # Pages Router docs
 └── README.md                   # This file
 ```
 
@@ -53,14 +87,20 @@ node scripts/cli.js nextjs-app-router --name my-nextjs-app
 Each skill is self-contained and can be used independently:
 
 ```bash
-# Test a specific skill
+# Test the scaffold generator skill
 cd skills/frontend-scaffold
 node scripts/test-generation.js
 
-# Use a skill for project generation
+# Use the scaffold generator for project generation
 cd skills/frontend-scaffold
 node scripts/cli.js --help
+
+# Access Next.js documentation and references
+cd skills/nextjs
+cat SKILL.md
 ```
+
+**Note**: The `frontend-scaffold` skill is a code generation tool, while `nextjs` is a documentation-type skill providing comprehensive reference material.
 
 ## 📦 Installation
 
